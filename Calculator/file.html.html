@@ -1,0 +1,42 @@
+r̥<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="file.css.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="btn clear" onclick="clearDisplay()">C</button>
+            <button class="btn delete-entry" onclick="deleteEntry()">DE</button> 
+            <button class="btn operator" onclick="data_value('-')">-</button> 
+            <button class="btn operator" onclick="data_value('/')">/</button>
+
+            <button class="btn" onclick="data_value('7')">7</button>
+            <button class="btn" onclick="data_value('8')">8</button>
+            <button class="btn" onclick="data_value('9')">9</button>
+            <button class="btn operator" onclick="data_value('*')">*</button>
+
+            <button class="btn" onclick="data_value('4')">4</button>
+            <button class="btn" onclick="data_value('5')">5</button>
+            <button class="btn" onclick="data_value('6')">6</button>
+            <button class="btn operator" onclick="data_value('+')">+</button>
+
+            <button class="btn" onclick="data_value('1')">1</button>
+            <button class="btn" onclick="data_value('2')">2</button>
+            <button class="btn" onclick="data_value('3')">3</button>
+            <button class="btn decimal" onclick="data_value('.')">.</button> 
+
+            <button class="btn" onclick="data_value('00')">00</button> 
+            <button class="btn" onclick="data_value('0')">0</button>
+            <button class="btn percent" onclick="calculatePercentage()">%</button> 
+            <button class="btn equals" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <script src="file.js.js"></script>
+</body>
+</html>
