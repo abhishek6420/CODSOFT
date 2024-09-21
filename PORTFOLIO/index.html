@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Portfolio</title>
+    <link rel="stylesheet" href="file.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="profile">
+        <img src="image\profile-pic-.png" alt="Profile Image" class="profile__image">
+        <div class="profile__text">
+        <p class="profile__text__p1">Hello, I'm</p>
+        <h1 class="title">Abhishek Singh Rathore</h1>
+        <p class="profile__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('///C:/Users/Dell/Desktop/PORTFOLIO/image/resume%201%20(1).pdf')">
+            Download CV
+          </button>
+        </div>
+
+        <div id="socials-container">
+            <img src="image/linkedin.png" alt="My LinkedIn profile" class="icon"
+                onclick="location.href='https://www.linkedin.com/in/abhishek-singhr/'">
+            <img src="image/github.png" alt="My Github profile" class="icon"
+                onclick="location.href='https://github.com/abhishek6420'">
+        </div>
+        
+      </div>
+    </div>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Hi! I'm a web developer with a passion for creating interactive experiences.</p>
+        <div class="about-containers">
+            <div class="box">
+                <h3>Experience</h3>
+                <img src="image\experience.png" alt="Experience Image" class="box-image">
+                <p>3+ months of experience in Zarurat Club in My University <br> Team & Hard Working </p>
+            </div>
+            <div class="box">
+                <h3>Education</h3>
+                <img src="image\education.png" alt="Education Image" class="box-image">
+                <p> B.Tech Bachelors of Technology in <br> Computer Science & Engineering from XYZ University.</p>
+            </div>
+        </div>
+        <div class="profile-image-container">
+            <img src="image\about-pic1.png" alt="My Profile Image" class="profile-image">
+        </div>
+    </section>
+
+    <section id="skills">
+        <h3 class="skills-heading">Explore My</h3>
+        <h1 class="skills-title">Skills</h1>
+        <div class="skills-container">
+            <div class="skills-box">
+                <h2>Frontend Development</h2>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <img src="image\checkmark.png" alt="HTML" class="skill-icon"> 
+                        <span>HTML <br> (Experienced)</p></span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="image\checkmark.png" alt="CSS" class="skill-icon">
+                        <span>CSS <br> (Intermediate)</p></span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="image\checkmark.png" alt="JavaScript" class="skill-icon">
+                        <span>JavaScript <br> (Intermediate)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-box">
+                <h2>Familiar</h2>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <img src="image\checkmark.png" alt="C++" class="skill-icon"> 
+                        <span>C++ <br> (Basic)</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="image\checkmark.png" alt="MySQL" class="skill-icon"> 
+                        <span>MySQL <br> (Intermediate)</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="image\checkmark.png" alt="Python" class="skill-icon">
+                        <span>Python <br> (Basic)</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="image\checkmark.png" alt="DSA" class="skill-icon"> 
+                        <span>DSA <br> (Basic)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1>Projects</h1>
+    <div class="projects-container">
+        <div class="project">
+            <h2>Project 1</h2>
+            <img src="image\project-1.png" alt="Project 1 Image" class="project-image">
+            <p> Calculate </p>
+        </div>
+        <div class="project">
+            <h2>Project 2</h2>
+            <img src="image\project-2.png" alt="Project 2 Image" class="project-image">
+            <p> Landing Page Website </p>
+        </div>
+        <div class="project">
+            <h2>Project 3</h2>
+            <img src="image\project-3.png" alt="Project 3 Image" class="project-image">
+            <p> Cloth Shopping Website </p>
+        </div>
+        <div class="project">
+            <h2>Project 4</h2>
+            <img src="image\project-4.png" alt="Project 4 Image" class="project-image">
+            <p> Job Application Form </p>
+        </div>
+    </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" onsubmit="return showSuccessMessage(event);">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; My Portfolio</p>
+    </footer>
+
+    <script src="File.js"></script>
+</body>
+</html>
